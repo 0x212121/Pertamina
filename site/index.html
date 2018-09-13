@@ -46,27 +46,48 @@
             <img src="../Pertamina.png" style="width: 300px">
         </div>
 
-        <div class="help-box text-right">
+        <!-- <div class="help-box text-right">
           <p>Perlu Bantuan?</p>
           <a href="callto:#">(0542)5111000</a>
           <small><span>Jam Aktif:</span>  07:00-16:00 Senin-Jum'at</small>
-        </div>
+        </div> -->
+        <form class="search-form" action="search.php" method="GET" accept-charset="utf-8">
+          <label class="search-form_label">
+            <input class="search-form_input" type="text" name="s" autocomplete="off" placeholder=""/>
+            <span class="search-form_liveout"></span>
+          </label>
+          <button class="search-form_submit fa-search" type="submit"></button>
+        </form>
+
+
       </div>
 
 
       <div id="stuck_container" class="stuck_container">
         <div class="container">   
-        <nav class="navbar navbar-default navbar-static-top pull-left">
+        <nav class="navbar navbar-default navbar-static-top pull-left">            
+
             <div class="">  
-              <ul class="nav navbar-nav sf-menu text-center" data-type="navbar">
+              <ul class="nav navbar-nav sf-menu" data-type="navbar">
+                
                 <li class="active">
-                  <a href="./">HOME</a>
+                  <a href="./"><h6>HOME</h6></a>
                 </li>
+
                 <li>
-                  <a href="index-1.html">PROFILE</a>
+                  <a href="index-1.html"><h6>PORTAL</h6></a>
+                </li>  
+
+                <li>
+                  <a href="index-3.html"><h6>CORPORATE</h6></a>
                 </li>
-                <li class="dropdown">
-                  <a href="#">CORPORATE WEB<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                
+                <li>
+                  <a href="index-4.html"><h6>BERITA</h6></a>
+                </li>
+
+<!--                 <li class="dropdown">
+                  <a href="#"><h6>LAINNYA</h6><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
                   <ul class="dropdown-menu">
                     <li>
                       <a href="#">Lorem ipsum</a>
@@ -86,27 +107,29 @@
                         </ul>
                     </li>
                   </ul>
-                </li>                
+                </li>  --> 
+
                 <li>
-                  <a href="index-3.html">BERITA DAN EVENT</a>
-                </li>
-                <li>
-                  <a href="index-4.html">TAMBAHAN</a>
-                </li>
-                
-                <li>
-                  <a href="index-4.html">INFORMASI</a>
+                  <a href="index-5.html"><h6>INFO</h6></a>
                 </li>
 
                 <li>
-                  <a href="index-5.html">INFO</a>
+                  <a href="index-5.html"><h6>LEGAL</h6></a>
                 </li>
+
                 <li>
-                  <a href="index-6.html">INFO</a>
+                  <a href="index-5.html"><h6>VIDEO</h6></a>
                 </li>
+
+                <li>
+                  <a href="index-5.html"><h6>WEBSITE</h6></a>
+                </li>
+
+
+
               </ul>                           
-
             </div>
+<<<<<<< HEAD
             <form class="search-form" action="search.php" method="GET" accept-charset="utf-8">
             <label class="search-form_label">
             <input class="search-form_input" type="text" name="s" autocomplete="off" placeholder="cari sesuatu" value="apa yang anda cari?" />
@@ -116,9 +139,20 @@
             </form> 
         </nav>   
       </div>
+=======
+        </nav>  
+
+        <!-- <form class="search-form" action="search.php" method="GET" accept-charset="utf-8">
+          <label class="search-form_label">
+            <input class="search-form_input" type="text" name="s" autocomplete="off" placeholder=""/>
+            <span class="search-form_liveout"></span>
+          </label>
+          <button class="search-form_submit fa-search" type="submit"></button>
+        </form> -->
+        </div>
+      </div>  
+>>>>>>> 37bbcf66af1c39a086fae3e3754537ceb748100b
     </header>
-
-
 
   <!--========================================================
                             CONTENT
@@ -128,8 +162,8 @@
       
       <section class="well well1 well1_ins1">
         <div class="camera_container">
-          <div id="camera" class="camera_wrap">
-            <div data-src="images/page-1_slide3.jpg">
+          <div id="camera">
+            <div data-src="images/page-1_slide3.jpg" class="img-responsive">
               <div class="camera_caption fadeIn">
                 <div class="jumbotron jumbotron1">
                   <em>
@@ -255,11 +289,18 @@
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       
-      <section class="well well2 wow fadeIn bg2" data-wow-duration='3s'>
+      <section class="well well2 wow fadeIn  bg2" data-wow-duration='3s'>
         <div class="container">
+          <!-- <h2>
+            our 
+            <small>
+              clients
+            </small>
+          </h2> -->
 
           <div class="row offs1">
             <ul class="flex-list">
@@ -312,71 +353,17 @@
         </div>
       </section>
 
-        <div class="container centered">
+      <br>
+
+        <div class="container center991">
           <div class="row">
-          </div>
-          
-          <div class="row wow fadeIn" data-wow-duration='2s'>
-            <div class="col-md-4 col-sm-12 col-xs-12 content">
+            
+<!--             <div class="col-md-4 col-sm-12 col-xs-12">
               <div class="thumbnail thumb-shadow">
-                <img src="images/page-1_img3.jpg" alt="">
-                <div class="caption bg3">
-                  <h3>
-                    KEAHLIAN
-                  </h3>
-                  <div class="wrap">
-                    <p>
-                      Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod.
-                    </p>
-                    <a href="#" class="btn-link fa-angle-right"></a>
-                  </div>  
-                </div>
-              </div>              
-            </div>
-
-            <div class="col-md-4 col-sm-12 col-xs-12 content">
-              <div class="thumbnail thumb-shadow">
-                <img src="images/page-1_img4.jpg" alt="">
-                <div class="caption bg-primary">
-                  <h3>
-                    SUMBER DAYA
-                  </h3>
-                  <div class="wrap">
-                    <p>
-                      Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod.
-                    </p>
-                    <a href="#" class="btn-link fa-angle-right"></a>
-                  </div>  
-                </div>
-              </div>              
-            </div>
-
-            <div class="col-md-4 col-sm-12 col-xs-12 content">
-              <div class="thumbnail thumb-shadow">
-                <img src="images/page-1_img5.jpg" alt="">
+                <img src="images/page-1_img1.jpg" alt="">
                 <div class="caption bg2">
                   <h3>
-                    PENGEMBANGAN
-                  </h3>
-                  <div class="wrap">
-                    <p>
-                      Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod.
-                    </p>
-                    <a href="#" class="btn-link fa-angle-right"></a>
-                  </div>  
-                </div>
-              </div>             
-            </div>
-          </div>
-
-          <div class="row wow fadeIn" data-wow-duration='2s'>
-            <div>
-              <div class="col-md-4 col-sm-12 col-xs-12">
-              <div class="thumbnail thumb-shadow">
-                <img src="images/page-1_img3.jpg" alt="">
-                <div class="caption bg3">
-                  <h3>
-                    KEAHLIAN
+                    PROFIL
                   </h3>
                   <div class="wrap">
                     <p>
@@ -386,8 +373,164 @@
                   </div>  
                 </div>
               </div>              
-              </div>
+            </div> -->
+
+<!--             <div class="col-md-8 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                <img src="images/page-1_img2.jpg" alt="">
+                <div class="caption bg3">
+                  <h3>
+                    PERFORMA
+                  </h3>
+                  <div class="wrap">
+                    <p class="thumb_ins1">
+                      Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod.
+                    </p>
+                    <a href="#" class="btn-link fa-angle-right"></a>
+                  </div>  
+                </div>
+              </div> 
+            </div> -->
+          </div>
+
+          <div class="row wow fadeIn" data-wow-duration='2s'>
+            <div class="col-md-3 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                <img src="images/page-1_img3.jpg" alt="">
+                <div class="caption bg3">
+                  <h3>
+                    PROFIL
+                  </h3>
+                  <div class="wrap">
+                    <p>
+                      
+                    </p>
+                    <a href="#" class="btn-link fa-angle-right"></a>
+                  </div>  
+                </div>
+              </div>              
             </div>
+
+            <div class="col-md-3 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                <img src="images/page-1_img3.jpg" alt="">
+                <div class="caption bg3">
+                  <h3>
+                    BERITA DAN EVENT
+                  </h3>
+                  <div class="wrap">
+                    <p>
+                      
+                    </p>
+                    <a href="#" class="btn-link fa-angle-right"></a>
+                  </div>  
+                </div>
+              </div>              
+            </div>
+
+            <div class="col-md-3 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                <img src="images/page-1_img3.jpg" alt="">
+                <div class="caption bg3">
+                  <h3>
+                    INFORMASI
+                  </h3>
+                  <div class="wrap">
+                    <p>
+                      
+                    </p>
+                    <a href="#" class="btn-link fa-angle-right"></a>
+                  </div>  
+                </div>
+              </div>              
+            </div>
+
+            <div class="col-md-3 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                <img src="images/page-1_img3.jpg" alt="">
+                <div class="caption bg3">
+                  <h3>
+                    INFO LEGAL
+                  </h3>
+                  <div class="wrap">
+                    <p>
+                      
+                    </p>
+                    <a href="#" class="btn-link fa-angle-right"></a>
+                  </div>  
+                </div>
+              </div>              
+            </div>
+
+            <div class="col-md-3 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                <img src="images/page-1_img3.jpg" alt="">
+                <div class="caption bg3">
+                  <h3>
+                    SIAP (FORUM)
+                  </h3>
+                  <div class="wrap">
+                    <p>
+                      
+                    </p>
+                    <a href="#" class="btn-link fa-angle-right"></a>
+                  </div>  
+                </div>
+              </div>              
+            </div>
+
+            <div class="col-md-3 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                <img src="images/page-1_img3.jpg" alt="">
+                <div class="caption bg3">
+                  <h3>
+                    VIDEO
+                  </h3>
+                  <div class="wrap">
+                    <p>
+                      
+                    </p>
+                    <a href="#" class="btn-link fa-angle-right"></a>
+                  </div>  
+                </div>
+              </div>              
+            </div>
+
+            <div class="col-md-3 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                <img src="images/page-1_img3.jpg" alt="">
+                <div class="caption bg3">
+                  <h3>
+                    SAFETY MOMENT
+                  </h3>
+                  <div class="wrap">
+                    <p>
+                      
+                    </p>
+                    <a href="#" class="btn-link fa-angle-right"></a>
+                  </div>  
+                </div>
+              </div>              
+            </div>
+
+            <div class="col-md-3 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                <img src="images/page-1_img3.jpg" alt="">
+                <div class="caption bg3">
+                  <h3>
+                    SAFE WORK PRACTICE
+                  </h3>
+                  <div class="wrap">
+                    <p>
+                      
+                    </p>
+                    <a href="#" class="btn-link fa-angle-right"></a>
+                  </div>  
+                </div>
+              </div>              
+            </div>
+
+          </div>
         </div>        
       </section>
       
@@ -450,6 +593,18 @@
 
                   <a href="#" class="btn-link l-h1 fa-angle-right"></a>
                 </li>
+                <li>
+
+                  <a href="#">LAPORAN TAHUNAN 2</a>
+
+                  <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                </li>
+                <li>
+
+                  <a href="#">LAPORAN TAHUNAN 3</a>
+
+                  <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                </li>
               </ul>
             </div>
             <div class="col-md-6 col-sm-12">
@@ -464,16 +619,239 @@
         <div class="container">
           <div class="wrap text-center">
             <iframe width="850" height="530" src="https://www.youtube.com/embed/UtgHeeakkbI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<!--             <strong>
+              SAVE TIME,<br />
+              SAVE MONEY,
+              <small>
+                GROW & SUCCEED
+              </small>
+            </strong>
+            <p>
+              Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+            </p>
+            <a href="#" class="btn btn-primary">read more <span class="fa-angle-right"></span></a> -->
           </div>  
         </div>        
       </section>
-    </div>
+
+      <!-- <section class="well well2">
+        <div class="container">
+          <h2>
+            our 
+            <small>
+              clients
+            </small>
+          </h2>
+
+          <div class="row offs1">
+            <ul class="flex-list">
+              <li class="col-lg-3 col-sm-3 col-xs-6">
+                <a href="#">
+                  <img src="images/page-1_img7.jpg" alt="">
+                </a>  
+              </li>
+              <li class="col-lg-3 col-sm-3 col-xs-6">
+                <a href="#">
+                  <img src="images/page-1_img8.jpg" alt="">
+                </a>  
+              </li>
+              <li class="col-lg-3 col-sm-3 col-xs-6">
+                <a href="#">
+                  <img src="images/page-1_img9.jpg" alt="">
+                </a>  
+              </li>
+              <li class="col-lg-3 col-sm-3 col-xs-6">
+                <a href="#">
+                  <img src="images/page-1_img10.jpg" alt="">
+                </a>  
+              </li>
+            </ul>
+
+            <ul class="flex-list">
+              <li class="col-lg-3 col-sm-3 col-xs-6">
+                <a href="#">
+                  <img src="images/page-1_img11.jpg" alt="">
+                </a>  
+              </li>
+              <li class="col-lg-3 col-sm-3 col-xs-6">
+                <a href="#">
+                  <img src="images/page-1_img12.jpg" alt="">
+                </a>  
+              </li>
+              <li class="col-lg-3 col-sm-3 col-xs-6">
+                <a href="#">
+                  <img src="images/page-1_img13.jpg" alt="">
+                </a>  
+              </li>
+              <li class="col-lg-3 col-sm-3 col-xs-6">
+                <a href="#">
+                  <img src="images/page-1_img14.jpg" alt="">
+                </a>  
+              </li>
+            </ul>
+          </div>  
+          
+        </div>
+      </section> -->
+
     </main>
 
     <!--========================================================
                             FOOTER
   =========================================================-->
   <footer class="top-border">
+
+    <!-- <div class="map">
+      <div id="google-map" class="map_model" data-zoom="8"></div>
+      <ul class="map_locations">
+        <li data-x="-1.254252" data-y="116.822301" data-basic="images/gmap_marker.png" data-active="images/gmap_marker_active.png">
+          <div class="location">
+            <h3 class="txt-clr1">
+              BUSINESS
+              <small>
+                COMPANY
+              </small>
+            </h3>  
+              <address>
+                <dl>
+                  <dt>Free phone: </dt>
+                  <dd class="phone"><a href="callto:#"> 800-2345-6789</a></dd>
+                </dl>
+                <dl>
+                  <dt>Address: </dt>
+                  <dd> 4578 Marmora Road,Glasgow D04 89GR</dd>
+                </dl>
+                <dl>
+                  <dt>Hours: </dt>
+                  <dd> 6am-4pm PST M-Th; &nbsp;&nbsp;  6am-3pm PST Fri</dd>
+                </dl>
+                <dl>
+                  <dt> E-mail: </dt>
+                  <dd><a href="mailto:#">info@demolink.org</a></dd>
+                </dl>
+              </address>
+            
+          </div>
+        </li>
+        <li data-x="-74.100000" data-y="40.643180" data-basic="images/gmap_marker2.png" data-active="images/gmap_marker2_active.png">
+          <div class="location">
+            <h3 class="txt-clr1">
+              flooring
+              <small>
+                RETAILER
+              </small>
+            </h3>
+              <address>
+                <dl>
+                  <dt>Free phone: </dt>
+                  <dd class="phone"><a href="callto:#"> 800-2345-6789</a></dd>
+                </dl>
+                <dl>
+                  <dt>Address: </dt>
+                  <dd> 4578 Marmora Road,Glasgow D04 89GR</dd>
+                </dl>
+                <dl>
+                  <dt>Hours: </dt>
+                  <dd> 6am-4pm PST M-Th; &nbsp;&nbsp;  6am-3pm PST Fri</dd>
+                </dl>
+                <dl>
+                  <dt> E-mail: </dt>
+                  <dd><a href="mailto:#">info@demolink.org</a></dd>
+                </dl>
+              </address>
+            
+          </div>
+        </li>
+        <li data-x="-73.8854068" data-y="40.693180" data-basic="images/gmap_marker3.png" data-active="images/gmap_marker3_active.png">
+          <div class="location">
+            <h3 class="txt-clr1">
+              flooring
+              <small>
+                RETAILER
+              </small>
+            </h3>
+              <address>
+                <dl>
+                  <dt>Free phone: </dt>
+                  <dd class="phone"><a href="callto:#"> 800-2345-6789</a></dd>
+                </dl>
+                <dl>
+                  <dt>Address: </dt>
+                  <dd> 4578 Marmora Road,Glasgow D04 89GR</dd>
+                </dl>
+                <dl>
+                  <dt>Hours: </dt>
+                  <dd> 6am-4pm PST M-Th; &nbsp;&nbsp;  6am-3pm PST Fri</dd>
+                </dl>
+                <dl>
+                  <dt> E-mail: </dt>
+                  <dd><a href="mailto:#">info@demolink.org</a></dd>
+                </dl>
+              </address>
+            
+          </div>
+        </li>
+        <li data-x="-73.7874068" data-y="40.613180" data-basic="images/gmap_marker4.png" data-active="images/gmap_marker4_active.png">
+          <div class="location">
+            <h3 class="txt-clr1">
+              flooring
+              <small>
+                RETAILER
+              </small>
+            </h3>
+              <address>
+                <dl>
+                  <dt>Free phone: </dt>
+                  <dd class="phone"><a href="callto:#"> 800-2345-6789</a></dd>
+                </dl>
+                <dl>
+                  <dt>Address: </dt>
+                  <dd> 4578 Marmora Road,Glasgow D04 89GR</dd>
+                </dl>
+                <dl>
+                  <dt>Hours: </dt>
+                  <dd> 6am-4pm PST M-Th; &nbsp;&nbsp;  6am-3pm PST Fri</dd>
+                </dl>
+                <dl>
+                  <dt> E-mail: </dt>
+                  <dd><a href="mailto:#">info@demolink.org</a></dd>
+                </dl>
+              </address>
+            
+          </div>
+        </li>
+        <li data-x="-74.200000" data-y="40.683180" data-basic="images/gmap_marker5.png" data-active="images/gmap_marker5_active.png">
+          <div class="location">
+            <h3 class="txt-clr1">
+              flooring
+              <small>
+                RETAILER
+              </small>
+            </h3>
+              <address>
+                <dl>
+                  <dt>Free phone: </dt>
+                  <dd class="phone"><a href="callto:#"> 800-2345-6789</a></dd>
+                </dl>
+                <dl>
+                  <dt>Address: </dt>
+                  <dd> 4578 Marmora Road,Glasgow D04 89GR</dd>
+                </dl>
+                <dl>
+                  <dt>Hours: </dt>
+                  <dd> 6am-4pm PST M-Th; &nbsp;&nbsp;  6am-3pm PST Fri</dd>
+                </dl>
+                <dl>
+                  <dt> E-mail: </dt>
+                  <dd><a href="mailto:#">info@demolink.org</a></dd>
+                </dl>
+              </address>
+            
+          </div>
+        </li>
+      </ul>
+    </div> -->
+
     <section class="well1">
       <div class="container"> 
             <p class="rights">
