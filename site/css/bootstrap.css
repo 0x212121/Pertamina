@@ -5407,6 +5407,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
   min-height: 47px;
   margin-bottom: 0;
+  display: flex;
+  align-self: center;
 }
 @media (min-width: 768px) {
   .navbar {
