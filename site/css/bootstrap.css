@@ -824,6 +824,7 @@ th {
 }
 .glyphicon-phone-alt:before {
   content: "\e183";
+  color: green;
 }
 .glyphicon-tower:before {
   content: "\e184";
@@ -1064,11 +1065,11 @@ th {
   background: rgba(255, 255, 255, 0.9);
   z-index: 999;
   box-shadow: 0 1px 2px #bbb;
-  height: 80px;
+  height: 62px;
 }
 @media (max-width: 1199px) {
   .isStuck {
-    height: 58px;
+    height: 52px !important;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -1895,7 +1896,7 @@ a:hover {
 }
 a[href^="tel:"],
 a[href^="callto:"] {
-  text-decoration: none;
+  color: #07a9df;
 }
 img {
   vertical-align: middle;
@@ -2091,7 +2092,7 @@ section.sect-404 .lead + p {
 =========================================================*/
 footer {
   border-top: 1px solid #e0e0e0;
-  background: #ffffff;
+  background: #0a0a0a;
 }
 footer.top-border {
   border-top: 24px solid #000;
@@ -2895,7 +2896,8 @@ blockquote.pull-right .small:after {
 }
 .rights {
   margin-top: 0px;
-  font-size: 13px;
+  font-size: 10px;
+  color: white;
 }
 .rights a:hover {
   color: #21c2f8;
@@ -7389,8 +7391,10 @@ a.list-group-item-danger.active:focus {
   border-radius: 3px;
 }
 .well1 {
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px
 }
 @media (max-width: 767px) {
   .well1_ins1 {
@@ -8154,4 +8158,9 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+
+.telephone {
+  background-color: #383f48;
+  color: #fafafa;
 }
