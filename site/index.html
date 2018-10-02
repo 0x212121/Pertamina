@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/camera.css">
     <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/google-map.css">
-    <link rel="stylesheet" href="css/mega-dropdown.css">
+    <link rel="stylesheet" href="css/megaMenu.css">
 
 
     <!--JS-->
@@ -24,13 +24,7 @@
     <script src="js/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/rd-smoothscroll.min.js"></script>
 
-    <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-
-    <script type="jquery">jQuery(document).on('click', '.mega-dropdown', function(e) {
-  e.stopPropagation()
-        })</script>
+    <!-- <script type="jquery">jQuery(document).on('click', '.mega-dropdown', function(e) { e.stopPropagation() })</script> -->
     <!--[if lt IE 9]>
     <div style=' clear: both; text-align:center; position: relative;'>
         <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
@@ -50,9 +44,9 @@
     <header>  
       <div class="container top-sect">
         <div class="navbar-header">
-            <img src="../Pertamina.png" style="width: 300px">
+            <img src="../Pertamina.png" style="width: 150px">
         </div>
-        <div style="margin-top: 4em">
+        <div style="margin-top: 1em">
           <form class="search-form" action="search.php" method="GET" accept-charset="utf-8">
             <label class="search-form_label">
               <input class="search-form_input" type="text" name="s" autocomplete="off" placeholder="Cari"/>
@@ -65,39 +59,39 @@
 
       <div id="stuck_container" class="stuck_container">
         <div class="container">   
-        <nav class="navbar navbar-default navbar-static-top pull-left">
-          <div class="">  
-            <ul class="nav navbar-nav sf-menu" data-type="navbar">
-              
-              <li class="active">
-                <a href="./"><h6>HOME</h6></a>
-              </li>
+          <nav class="navbar navbar-default navbar-static-top pull-left">
+            <div class="megaMenu">  
+              <ul>
+                <li>
+                  <a href="./">HOME</a>
+                </li>
 
-              <li class="dropdown">
-                <a href="#"><h6>PORTAL</h6></a>
-                <ul class="dropdown-menu">
-                  <li><a href="http://ptmru5bpnpas05.pertamina.com/sites/ruv">RU V</a></li>
-                  <li><a href="http://ptmru5bpnpas05.pertamina.com/sites/ruv">RDMP RU V</a></li>
-                </ul>
-              </li>    
+                <li>
+                  <a href="#"><span>PORTAL</span></a>
+                  <div class="right">
+                    <ul>
+                    <li class="parent"><a href="http://ptmru5bpnpas05.pertamina.com/sites/ruv">RU V</a></li>
+                    <li class="parent"><a href="http://ptmru5bpnpas05.pertamina.com/sites/ruv">RDMP RU V</a></li>  
+                    </ul>
+                  </div>
+                </li>    
 
-              <li class="dropdown">
-                <a href="#"><h6>CORPORATE WEB</h6></a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="#">Intranet Unit</a>
-                    <ul class="dropdown-menu">
+                <li>
+                  <a href="#"><span>CORPORATE WEB</span></a>
+                  <div class="right">
+                    <ul>
+                      <li class="parent">
+                        <a href="#">Intranet Unit</a>
+                      </li>
                       <li><a href="http://intra.pertamina.com/">Pertamina Pusat</a></li>
                       <li><a href="http://10.52.0.5/a/">RU II Dumai</a></li>
                       <li><a href="http://intra-ru3.pertamina.com/hse_survey/">RU III Plaju</a></li>
                       <li><a href="http://simops.pertamina.com:85/">RU IV Cilacap</a></li>
                       <li><a href="http://intra-ru6.pertamina.com/Intranet/Home/HomePage/Home.aspx">RU VI Balongan</a></li>
                     </ul>
-                  </li>
 
-                  <li>
-                    <a href="#">Link To Application</a>
-                    <ul class="dropdown-menu">
+                    <ul>
+                      <li class="parent"><a href="#">Link To Application</a></li>
                       <li><a href="http://ptmkpwfeiam.pertamina.com/Account/Login?returnUrl=">Aplikasi People Review</a></li>
                       <li><a href="http://intra.pertamina.com/pms">PMS Online</a></li>
                       <li><a href="http://ptmkpwebapp06.pertamina.com/EPDPOnline/Login.aspx?stat=endsession">EPD Online</a></li>
@@ -107,99 +101,203 @@
                       <li><a href="ptmkpwebapp04.pertamina.com/FinanceOperation/login.aspx?ReturnUrl=%2fFinanceOperation">Finance Operation</a></li>
                       <li><a href="http://intra-ru5.pertamina.com/SP">Serikat kerja Pertamina kalimantan</a></li>
                     </ul>
-                  </li>
-                </ul>
-              </li>
-              
-              <li>
-                <a href="http://ptmkpspoint03.pertamina.com:91/ecorr-new"><h6>E-CORRESPONDANCE</h6></a>
-              </li>
+                  
+                    <ul>
+                      <li class="parent"><a href="#">Link To Application</a></li>
+                      <li>Procure to Pay ( P2P )</li>
+                      <li>ROAS</li>
+                      <li>LIMS</li>
+                      <li>e-Project Management (PROLOG)</li>
+                      <li>Primavera P6</li>
+                      <li>UMK Online</li>
+                      <li>8 Prioritas Pengolahan</li>
+                      <li>Cash Card/UMK (JOJONOMIC)</li>
+                      <li>Travel Management (BMC)</li>
+                    </ul>
+                  </div>
+                </li>
+                </li>
+                
+                <li>
+                  <a href="http://ptmkpspoint03.pertamina.com:91/ecorr-new"><span>E-CORRESPONDANCE</span></a>
+                </li>
 
-              <li>
-                <a href="http://ptmkpwfeiam.pertamina.com/Account/Login?returnUrl="><h6>I-AM</h6></a>
-              </li>
+                <li>
+                  <a href="http://ptmkpwfeiam.pertamina.com/Account/Login?returnUrl="><span>I-AM</span></a>
+                </li>
 
-              <li class="dropdown">
-                <a href="index-5.html"><h6>LAPORAN</h6></a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown">
-                    <a href="#">Refinery Planning and Optimization</a>
-                    <ul class="dropdown-menu">
+                <li>
+                  <a href="#"><span>LAPORAN</span></a>
+                  <div class="left">
+                  <ul>
+                      <li class="parent"><a href="#">Refinery Planning and Optimization</a></li>
                       <li><a href="http://intra-ru5.pertamina.com:83/Pages/Laporan/1">Rencana Pengolahan (STS & RPM)</a></li>
                       <li><a href="http://intra-ru5.pertamina.com:83/Pages/Laporan/3">Stock Minyak Mentah</a></li>
                       <li><a href="http://intra-ru5.pertamina.com:83/Pages/Laporan/2">RPH & Pengapalan</a></li>
                       <li><a href="http://intra-ru5.pertamina.com:83/Pages/Laporan/4">Margin</a></li>
-                    </ul>
-                  </li>
+                  </ul>
 
-                  <li class="dropdown">
-                    <a href="#">Health and Safety Environmental</a>
-                    <ul class="dropdown-menu">
+                  <ul>
+                      <li class="parent"><a href="#">Health and Safety Environmental</a></li>                  
                       <li><a href="http://intra-ru5.pertamina.com:83/Pages/Laporan/5">Tim On duty</a></li>
-                    </ul>
-                  </li>
 
-                  <li class="dropdown">
-                    <a href="#">Other Report</a>
-                    <ul class="dropdown-menu">
+                      <li class="parent"><a href="#">Other Report</a></li>
                       <li><a href="http://intra-ru5.pertamina.com/myapp/?md=home.ss&ref=ss">Laporan SS database</a></li>
                       <li><a href="http://pmcm-ru5.pertamina.com:81/cmre/beranda.php?v=list&d=hm">Laporan PM & CM</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-
-              <li>
-                <a href="http://ptmkpwab81.pertamina.com/komet/login.aspx?ReturnUrl=%2fkomet"><h6>KOMET</h6></a>
-              </li>
-
-              <!-- #fafafa -->
-
-              <li class="dropdown mega-dropdown">
-                <a href="index-5.html"><h6>WEB APPS</h6></a>
-
-                <ul class="dropdown-menu mega-dropdown-menu row">
-                  <div class="col-lg-4 col-sm-4 col-xs-4">
-                  <li class="dropdown-header">Production</li>
-                  <ul>
-                    <li>Oil Movement</li>
-                    <li>Port Management System (PMS)</li>
-                    <li>Management Port RU V</li>
-                    <li>Sistem ATG Balikpapan</li>
-                    <li>Dis & Wax</li>
-                    <li>HCC</li>
-                    <li>CPDP CITE</li>
-                    <li>Utilities Library</li>  
                   </ul>
                   </div>
+                </li>
 
-                  <div class="col-lg-4 col-sm-4 col-xs-4"> 
-                  <li class="dropdown-header">Refinery Planning & Optimization</li>
-                  <ul>
-                    <li>Aku</li>  
-                    <li>Sangat</li>  
-                    <li>Kesal</li>  
-                    <li></li>  
-                    <li></li>  
-                  </ul>
-                </div>
+                <li><a href="http://ptmkpwab81.pertamina.com/komet/login.aspx?ReturnUrl=%2fkomet"><span>KOMET</span></a></li>
 
-                <div class="col-lg-4 col-sm-4 col-xs-4">
-                  <li class="dropdown-header">Refinery Planning & Optimization</li>
-                  <ul>
-                    <li>Aku</li>  
-                    <li>Sangat</li>  
-                    <li>Kesal</li>  
-                    <li></li>  
-                    <li></li>  
-                  </ul>
-                </div>
+                <li>
+                  <a href="#"><span>WEB APPS</span></a>
+                  <div class="left">
+                    <ul>
+                      <li class="parent"><a href="">Production</a></li>
+                      <li><a href="">Oil Movement</a></li>
+                      <li><a href="">Port Management System (PMS)</a></li>
+                      <li><a href="">Management Port RU V</a></li>
+                      <li><a href="">Sistem ATG Balikpapan</a></li>
+                      <li><a href="">Dis & Wax</a></li>
+                      <li><a href="">HCC</a></li>
+                      <li><a href="">CPDP CITE</a></li>
+                      <li><a href="">Utilities Library</a></li>  
 
-                </ul>
-              </li>
-            </ul>                           
-          </div>
-        </nav>   
+                      <li class="parent"><a href="">Refinery Planning & Optimization</a></li>
+                      <li><a href="">Website RP & O</a></li>  
+                      <li><a href="">Notulen Rapat HCM</a></li>  
+                      <li><a href="">Survey Kepuasan Pelanggan RU V</a></li>
+
+                      <li class="parent"><a href="">Maintenance Planning & Support</a></li>
+                      <li><a href="">Online Owner Estimate (O2E)</a></li>  
+                      <li><a href="">IRES</a></li>  
+                      <li><a href="">SIGIweb</a></li> 
+                      <li><a href="">Condition Monitoring - E&I</a></li>  
+                      <li><a href="">Condition Monitoring - Rot Eng</a></li>
+
+                      <li class="parent"><a href="">Maintenance Execution</a></li>
+                      <li><a href="">Monitoring Maintenance Contract</a></li>  
+                      <li><a href="">Online Single Point Reporting System</a></li>
+                      <li><a href="">SteamLeak Monitoring</a></li>  
+                      <li><a href="">Tools Management</a></li>  
+                      <li><a href="">24h Unplanned Mtc Response</a></li>       
+                      <li><a href="">ClaMPS</a></li>   
+                      <li><a href="">Daily Activity Maintenance Report</a></li>   
+                    </ul>
+
+
+                    <ul>
+                      <li class="parent"><a href="">Reliability</a></li>
+                      <li><a href="">SIMREL</a></li>  
+                      <li><a href="">e-MOC</a></li>  
+                      <li><a href="">Corrosion Mapping</a></li>  
+                      <li><a href="">Refinery Reliability Dashboard</a></li>  
+                      <li><a href="">CFMonweb</a></li>  
+                      <li><a href="">e-Log</a></li>
+                      <li><a href="">RKAP</a></li>
+                      <li><a href="">SIGIweb</a></li>
+
+                      <li class="parent"><a href="">General Affair</a></li>
+                      <li><a href="">Secure ID (TKJP)</a></li>
+
+                      <li class="parent"><a href="">Turn Around</a></li>
+                      <li><a href="">TA Information System</a></li>
+                      <li><a href="">Situs TA</a></li>  
+                      <li><a href="">PCM & Skimming Katalis</a></li>  
+                      <li><a href="">TA 2017</a></li>  
+                      <li><a href="">PIT Stop Desember 2017</a></li>
+                      <li><a href="">TAPS</a></li>
+                      <li><a href="">Sistem Monitoring Maintenance</a></li>
+
+                      <li class="parent"><a href="">Opt. Performance & Improvement</a></li>
+                      <li><a href="">PIMS</a></li>
+                      <li><a href="">Portal OPI</a></li>  
+                      <li><a href="">Tindak Lanjut Rapat</a></li>  
+
+                      <li class="parent"><a href="">Quality Management</a></li>  
+                      <li><a href="">ROEMS</a></li>
+
+                      <li class="parent"><a href="">Asset</a></li>
+                      <li><a href="">Contract Monitoring System</a></li>
+                    </ul>
+
+                    <ul>
+                      <li class="parent"><a href="">Procurement</a></li>
+                      <li><a href="">O2E Purchasing</a></li>  
+                      <li><a href="">Sistem Informasi Kontrak Terintegrasi</a></li>  
+                      <li><a href="">Online Contract RU V</a></li>  
+                      <li><a href="">Online Scheduling Bidding</a></li>  
+                      <li><a href="">Proses Pengadaan Jasa</a></li>
+                      <li><a href="">Monitoring Proses Pengadaan Jasa</a></li>
+                      <li><a href="">Daftar CSMS</a></li>
+                      <li><a href="">Stock Information Material Management</a></li>
+                      <li><a href="">Monitoring Proses Pengadaan Material</a></li>
+                      <li><a href="">Monitoring Kedatangan Material</a></li>
+                      <li><a href="">Monitoring Stock Material MSLS</a></li>
+
+                      <li class="parent"><a href="">Health Safety & Environmental</a></li>
+                      <li><a href="">e-License</a></li>  
+                      <li><a href="">Informasi OnDuty</a></li>  
+                      <li><a href="">HSSE IMS</a></li>  
+                      <li><a href="">Formulir</a></li>  
+                      <li><a href="">PEKA Online</a></li>
+                      <li><a href="">Induction Online</a></li>
+                      <li><a href="">i-CARE (Corrective Action Recommendation Report)</a></li>
+                      <li><a href="">Laporan Kejadian dan Investigasi</a></li>
+                      <li><a href="">Belajar Dari Kesuksesan</a></li>
+                      <li><a href="">i-Alat Ukur</a></li>
+
+                      <li class="parent"><a href="">Legal Counsel</a></li>
+                      <li><a href="">Input Gratifikasi</a></li>  
+                      <li><a href="">Sosialisasi GCG</a></li>  
+                      <li><a href="">List Peraturan Perundangan & Code Standard - RACI</a></li>
+
+                      <li class="parent"><a href="">Engineering & Development</a></li>
+                      <li><a href="">PSI Online</a></li>  
+                      <li><a href="">PI Vision</a></li>  
+                    </ul>
+                      
+                    <ul>
+                      <li class="parent"><a href="">Human Resources</a></li>
+                      <li><a href="">Informasi Pekerja</a></li>  
+                      <li><a href="">Informasi PJS</a></li>  
+                      <li><a href="">Daftar Nama Pejabat</a></li>  
+                      <li><a href="">Perhitungan Pesangon Pekerja</a></li>  
+                      <li><a href="">Pelatihan & Learning Award</a></li>
+                      <li><a href="">Online Certification Monitoring (OCM)</a></li>
+                      <li><a href="">TKJP</a></li>
+                      <li><a href="">e-Attendance</a></li>
+                      <li><a href="">Ethics 247</a></li>
+                      <li><a href="">Ulang Tahun</a></li>
+                      <li><a href="">RDP Online</a></li>
+                      <li><a href="">Aplikasi Respon Keluhan Pekerja (REKAP)</a></li>
+
+                      <li class="parent"><a href="">Finance</a></li>
+                      <li><a href="">Web Reg & Mon Backlog RU V</a></li>  
+                      <li><a href="">Site Finance</a></li>  
+                      <li><a href="">AIS</a></li>
+
+                      <li class="parent"><a href="">Medical</a></li>
+                      <li><a href="">Medical MCU</a></li>  
+                      <li><a href="">Home Clinic, RS Rujukan & Jadwal Klinik</a></li>  
+                      <li><a href="">Kacamata</a></li> 
+                      <li><a href="">HIPER</a></li>
+
+                      <li class="parent"><a href="">Information & Technology</a></li>
+                      <li><a href="">Servicedesk - BMC Remedy</a></li>  
+                      <li><a href="">Inventory IT</a></li>  
+                      <li><a href="">Formulir Pengajuan Fasilitas IT</a></li> 
+                      <li><a href="">IDTime Web App</a></li>
+                      <li><a href="">Prolog Converge</a></li>
+                      <li><a href="">Handset Management</a></li>
+                      <li><a href="">ISRS</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>                           
+            </div>
+          </nav>   
         </div>
       </div>  
     </header>
@@ -208,137 +306,29 @@
                             CONTENT
   =========================================================-->
 
-    <main>             
+    <main>
       <section class="well well1 well1_ins1">
         <div class="camera_container">
           <div id="camera">
             <div data-src="images/page-1_slide2.jpg" class="img-responsive">
               <div class="camera_caption fadeIn">
-                <!-- <div class="jumbotron jumbotron1">
-                  <em>
-                    SAFETY
-                  </em>
-                  <div class="wrap">
-                    <p>
-                      Personal Safety of Workspace</span>.
-                    </p>
-                    <a href="#" class="btn-link fa-angle-right"></a>
-                  </div>  
-                </div> -->
               </div>
             </div>
+
             <div data-src="images/page-1_slide3.jpg">
               <div class="camera_caption fadeIn">
-                <div class="jumbotron jumbotron2">
-                  <em>
-                    Compilance
-                  </em>
-                  <div class="wrap">
-                    <p>
-                      Environtment Compilance</span>.
-                    </p>
-                    <a href="#" class="btn-link hov_prime fa-angle-right"></a>
-                  </div>  
-                </div>
               </div>
             </div>
 
             <div data-src="images/page-1_slide1.jpg">
               <div class="camera_caption fadeIn">
-                <div class="jumbotron">
-                  <em>
-                    PROFIT
-                  </em>
-                  <div class="wrap">
-                    <p>
-                      <span>Profit Margin</span>.
-                    </p>
-                    <a href="#" class="btn-link fa-angle-right"></a>
-                  </div>  
-                </div>
               </div>
             </div>
 
             <div data-src="images/page-1_slide4.jpg">
               <div class="camera_caption fadeIn">
-                <div class="jumbotron jumbotron2">
-                  <em>
-                    REFINING
-                  </em>
-                  <div class="wrap">
-                    <p>
-                      <span>Refining Availability</span>.
-                    </p>
-                    <a href="#" class="btn-link fa-angle-right"></a>
-                  </div>  
-                </div>
               </div>
             </div>
-
-            <div data-src="images/page-1_slide5.jpg">
-              <div class="camera_caption fadeIn">
-                <div class="jumbotron jumbotron1">
-                  <em>
-                    Maximize
-                  </em>
-                  <div class="wrap">
-                    <p>
-                      <span>Maximizing Product</span>.
-                    </p>
-                    <a href="#" class="btn-link fa-angle-right"></a>
-                  </div>  
-                </div>
-              </div>
-            </div>
-
-            <div data-src="images/page-1_slide2.jpg">
-              <div class="camera_caption fadeIn">
-                <div class="jumbotron jumbotron2">
-                  <em>
-                    EFFICIENT
-                  </em>
-                  <div class="wrap">
-                    <p>
-                      <span>Energy Efficiency and Reduce Losses</span>.
-                    </p>
-                    <a href="#" class="btn-link fa-angle-right"></a>
-                  </div>  
-                </div>
-              </div>
-            </div>
-
-            <div data-src="images/page-1_slide1.jpg">
-              <div class="camera_caption fadeIn">
-                <div class="jumbotron">
-                  <em>
-                    HIGH QUALITY
-                  </em>
-                  <div class="wrap">
-                    <p>
-                      <span>Producing High Quality Standard</span>.
-                    </p>
-                    <a href="#" class="btn-link fa-angle-right"></a>
-                  </div>  
-                </div>
-              </div>
-            </div>
-
-            <div data-src="images/page-1_slide4.jpg">
-              <div class="camera_caption fadeIn">
-                <div class="jumbotron jumbotron2">
-                  <em>
-                    PEOPLE
-                  </em>
-                  <div class="wrap">
-                    <p>
-                      <span>People Development</span>.
-                    </p>
-                    <a href="#" class="btn-link fa-angle-right"></a>
-                  </div>  
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
       
@@ -377,7 +367,55 @@
         <small>
         SELAMAT DATANG DI WEB PERTAMINA RU V</small>
         </h2>
-        <div class="container center991">
+
+        <section class="well well2 wow fadeIn  bg1" data-wow-duration='3s'>
+        <div class="container">
+        <h3>
+        &nbsp &nbsp &nbspINFO JUMLAH PEKERJA
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspPEJABAT SEMENTARA
+        </h3>
+          <div class="row">
+            <div class="col-md-3 col-sm-12">
+              <h5>KILANG RU V</h5>
+              <h4>745         
+              </h4>
+              <h5>EX DIKLAT</h5>
+              <h4>            
+                77
+              </h4>
+              <h5>Gent Main</h5>
+              <h4>            
+                82
+              </h4>
+            </div>
+            <div class="col-md-3 col-sm-12">
+              <h5>KANTOR BESAR</h5>
+              <h4>           
+                386
+              </h4>
+
+              <h5>KANTOR UP</h5>
+              <h4>            
+                91
+              </h4>
+
+              <h5>KANTOR S&W</h5>
+              <h4>            
+                125
+              </h4>
+            </div>
+            <div class="col-md-3 col-sm-12">
+              <img src="images/OKY WIBISONO.jpg" alt="">
+            </div>
+            <div class="col-md-3 col-sm-12">
+              <h4>Oky Wibisono</h4>
+              <h5>Pjs. Manager General Affairs</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+
+         <div class="container center991">
           <div class="row wow fadeIn" data-wow-duration='2s'>
             <div class="col-md-6 col-sm-12 col-xs-12">
               <div class="thumbnail thumb-shadow">
@@ -511,35 +549,35 @@
                   <a href="http://intra-ru5.pertamina.com:83/Pages/Berita/3">SOSIALISASI</a>
                 </li>
                 <h5>Dokumen Standar Rapat & OME</h5><br>
-                <a>1. Notulen<a href="http://intra-ru5.pertamina.com:83/Files/Etc/MeetingOME/NOTULEN%20RAPAT.DOTX" class="btn-link l-h1 fa-angle-right"></a></a><br>
+                <a href="http://intra-ru5.pertamina.com:83/Files/Etc/MeetingOME/NOTULEN%20RAPAT.DOTX" class="btn-link l-h1">1. Notulen</a><br>
 
-                <a>2. Minutes of Meeting<a href="http://intra-ru5.pertamina.com:83/Files/Etc/MeetingOME/MOM.DOTX" class="btn-link l-h1 fa-angle-right"></a></a><br>
+                <a href="http://intra-ru5.pertamina.com:83/Files/Etc/MeetingOME/MOM.DOTX" class="btn-link l-h1">2. Minutes of Meeting</a><br>
 
-                <a>3. Daftar Hadir<a href="http://intra-ru5.pertamina.com:83/Files/Etc/MeetingOME/Standarisasi%20Form%20Daftar%20Hadir%20Rapat%20RU%20V.xlsx" class="btn-link l-h1 fa-angle-right"></a></a><br>
+                <a href="http://intra-ru5.pertamina.com:83/Files/Etc/MeetingOME/Standarisasi%20Form%20Daftar%20Hadir%20Rapat%20RU%20V.xlsx" class="btn-link l-h1">3. Daftar Hadir</a><br>
 
-                <a>4. Overall Meeting Effectiveness (OME)<a href="http://intra-ru5.pertamina.com:83/Files/Etc/MeetingOME/Contoh%20Format%20OME%20(Overall%20Meeting%20Effectiveness).xlsx" class="btn-link l-h1 fa-angle-right"></a></a><br>
+                <a href="http://intra-ru5.pertamina.com:83/Files/Etc/MeetingOME/Contoh%20Format%20OME%20(Overall%20Meeting%20Effectiveness).xlsx" class="btn-link l-h1">4. Overall Meeting Effectiveness (OME)</a><br>
 
-                <a>5. Meeting MAP RU V<a href="http://intra-ru5.pertamina.com:83/Files/Etc/Meeting%20Map%20RU%20V%20rev%202017.pptx" class="btn-link l-h1 fa-angle-right"></a></a><br>
+                <a href="http://intra-ru5.pertamina.com:83/Files/Etc/Meeting%20Map%20RU%20V%20rev%202017.pptx" class="btn-link l-h1">5. Meeting MAP RU V</a><br>
 
-                <a>6. Countdown Timer<a href="http://intra-ru5.pertamina.com:83/Files/Etc/timer/start_countdown.html" class="btn-link l-h1 fa-angle-right"></a></a><br>
+                <a href="http://intra-ru5.pertamina.com:83/Files/Etc/timer/start_countdown.html" class="btn-link l-h1">6. Countdown Timer</a><br>
 
-                <a>7. Sosialisasi Corporate Brand Logo<a href="http://intra-ru5.pertamina.com:83/Files/Etc/Sosialisasi%20Corporate%20Brand%20Logo_2013.pdf" class="btn-link l-h1 fa-angle-right"></a></a><br>
+                <a href="http://intra-ru5.pertamina.com:83/Files/Etc/Sosialisasi%20Corporate%20Brand%20Logo_2013.pdf" class="btn-link l-h1">7. Sosialisasi Corporate Brand Logo</a><br>
 
-                <a>8. Form Permintaan Reward<a href="http://intra-ru5.pertamina.com:83/Files/Etc/Form%20Permintaan%20Reward.docx" class="btn-link l-h1 fa-angle-right"></a></a><br>
+                <a href="http://intra-ru5.pertamina.com:83/Files/Etc/Form%20Permintaan%20Reward.docx" class="btn-link l-h1">8. Form Permintaan Reward</a><br>
 
-                <a>9. Form Feedback Peserta Rapat<a href="http://intra-ru5.pertamina.com:83/Files/Etc/Form%20Feedback%20Peserta%20Rapat.xlsx" class="btn-link l-h1 fa-angle-right"></a></a><br>
+                <a href="http://intra-ru5.pertamina.com:83/Files/Etc/Form%20Feedback%20Peserta%20Rapat.xlsx" class="btn-link l-h1">9. Form Feedback Peserta Rapat</a><br>
 
-                <a>Sustainability Report RU V<a href="http://intra-ru5.pertamina.com:83/Files/Etc/2923_Buku%20Sustainability%20Report%20RU%20V%20Tahun%202015.pdf" class="btn-link l-h1 fa-angle-right"></a></a><br>
+                <a href="http://intra-ru5.pertamina.com:83/Files/Etc/2923_Buku%20Sustainability%20Report%20RU%20V%20Tahun%202015.pdf" class="btn-link l-h1">Sustainability Report RU V</a><br>
 
-                <a>Sosialisasi GCG<a href="http://ptmru5bpnpas01.pertamina.com/download/index.php?&direction=0&order=&directory=Document/Sosialisasi%20GCG" class="btn-link l-h1 fa-angle-right"></a></a><br>
+                <a href="http://ptmru5bpnpas01.pertamina.com/download/index.php?&direction=0&order=&directory=Document/Sosialisasi%20GCG" class="btn-link l-h1">Sosialisasi GCG</a><br>
 
-                <a>Launching Buku Ecopedition a Journey Saving Our Dying Species in Kalimantan<a href="http://intra-ru5.pertamina.com:83/Pages/BeritaDetail/3-31812" class="btn-link l-h1 fa-angle-right"></a></a><br>
+                <a href="http://intra-ru5.pertamina.com:83/Pages/BeritaDetail/3-31812" class="btn-link l-h1">Launching Buku Ecopedition a Journey Saving Our Dying Species in Kalimantan</a><br>
 
-                <a>Sosialisasi Penanganan Komunikasi Eksternal ComRel<a href="http://intra-ru5.pertamina.com:83/Pages/BeritaDetail/3-31806" class="btn-link l-h1 fa-angle-right"></a></a><br>
+                <a href="http://intra-ru5.pertamina.com:83/Pages/BeritaDetail/3-31806" class="btn-link l-h1">Sosialisasi Penanganan Komunikasi Eksternal ComRel</a><br>
 
-                <a>Pelaksanaan Komet Sharing Project Engineering Section<a href="http://intra-ru5.pertamina.com:83/Pages/BeritaDetail/3-31569" class="btn-link l-h1 fa-angle-right"></a></a><br>
+                <a href="http://intra-ru5.pertamina.com:83/Pages/BeritaDetail/3-31569" class="btn-link l-h1">Pelaksanaan Komet Sharing Project Engineering Section</a><br><br>
 
-                <a>Selengkapnya<a href="http://intra-ru5.pertamina.com:83/Pages/Berita/3" class="btn-link l-h1 fa-angle-right"></a></a>
+                <a href="http://intra-ru5.pertamina.com:83/Pages/Berita/3" class="btn-link l-h1">Selengkapnya</a>
               </ul>
             </div>
 
@@ -551,12 +589,12 @@
                   <!-- <a href="#" class="btn-link l-h1 fa-angle-right"></a> -->
                 </li>
                 <br>
-                <h6>Subsidi LPG bisa naik 1.6 Triliun<a href="http://intra-ru5.pertamina.com:83/Pages/BeritaDetail/4-33145" class="btn-link l-h1 fa-angle-right"></a></h6><br>
-                <h6>Dibayangi Penurunan Produksi Migas<a href="http://intra-ru5.pertamina.com:83/Pages/BeritaDetail/4-33144" class="btn-link l-h1 fa-angle-right"></a></h6><br>
-                <h6>Pertamina RU V Siap Kembangkan Kampung Mandiri Energi<a href="#" class="btn-link l-h1 fa-angle-right"></a></h6><br>
-                <h6>Pertamina RU V Siap Kembangkan Kampung Mandiri Energi<a href="#" class="btn-link l-h1 fa-angle-right"></a></h6><br>
-                <h6>Pertamina RU V Siap Kembangkan Kampung Mandiri Energi<a href="#" class="btn-link l-h1 fa-angle-right"></a></h6><br>
-                <a>Selengkapnya<a href="#" class="btn-link l-h1 fa-angle-right"></a></a>
+                <a href="http://intra-ru5.pertamina.com:83/Pages/BeritaDetail/4-33145" class="btn-link l-h1">Subsidi LPG bisa naik 1.6 Triliun</a><br>
+                <a href="http://intra-ru5.pertamina.com:83/Pages/BeritaDetail/4-33144" class="btn-link l-h1">Dibayangi Penurunan Produksi Migas</a><br>
+                <a href="#" class="btn-link l-h1">Pertamina RU V Siap Kembangkan Kampung Mandiri Energi</a><br>
+                <a href="#" class="btn-link l-h1">Pertamina RU V Siap Kembangkan Kampung Mandiri Energi</a><br>
+                <a href="#" class="btn-link l-h1">Pertamina RU V Siap Kembangkan Kampung Mandiri Energi</a><br><br>
+                <a href="#" class="btn-link l-h1">Selengkapnya</a>
 
               </ul>
             </div>
@@ -564,59 +602,12 @@
         </div>
       </section>
 
-            <section class="well well2 wow fadeIn  bg1" data-wow-duration='3s'>
-        <div class="container">
-        <h3>
-        &nbsp &nbsp &nbspINFO JUMLAH PEKERJA
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspPEJABAT SEMENTARA
-        </h3>
-          <div class="row">
-            <div class="col-md-3 col-sm-12">
-              <h5>KILANG RU V</h5>
-              <h4>745         
-              </h4>
-              <h5>EX DIKLAT</h5>
-              <h4>            
-                77
-              </h4>
-              <h5>Gent Main</h5>
-              <h4>            
-                82
-              </h4>
-            </div>
-            <div class="col-md-3 col-sm-12">
-              <h5>KANTOR BESAR</h5>
-              <h4>           
-                386
-              </h4>
-
-              <h5>KANTOR UP</h5>
-              <h4>            
-                91
-              </h4>
-
-              <h5>KANTOR S&W</h5>
-              <h4>            
-                125
-              </h4>
-            </div>
-            <div class="col-md-3 col-sm-12">
-              <img src="images/OKY WIBISONO.jpg" alt="">
-            </div>
-            <div class="col-md-3 col-sm-12">
-              <h4>Oky Wibisono</h4>
-              <h5>Pjs. Manager General Affairs</h5>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section class="well well3 parallax" data-url="images/parallax3.jpg" data-mobile="true" data-speed="0.9">
-        <div class="container">
+<!--         <div class="container">
           <div class="wrap text-center">
             <iframe width="400" height="300" src="https://www.youtube.com/embed/UtgHeeakkbI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>  
-        </div>        
+        </div>         -->
       </section>
     </main>
 

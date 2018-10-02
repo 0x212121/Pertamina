@@ -22,7 +22,7 @@
   width: 100%;
   display: block;
   padding: 10px 50px 10px 10px;
-  background: trancparent;
+  background: transparent;
   border: 1px solid #c9c9c9;
 }
 @media (max-width: 1199px) {
@@ -351,8 +351,8 @@ body.search_body {
   background: #1b1b1d;
 }
 .content {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .search_head {
   padding-bottom: 25px;
